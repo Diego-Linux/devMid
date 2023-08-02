@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest calculate</title>
+</head>
+
+<h1>Interest calculator</h1>
+
+Capital<br />
+
+<input id="capital" type="number" /> <br />
+
+Rate<br />
+
+<input id="rate" type="number" /> <br /> <br />
+
+Time<br />
+
+<input id="time" type="number" /> <br /> <br />
+
+<button onclick="interestCalculator()">Calculate</button>
+<br /> <br />
+
+result <span></span>
+
+<script>
+    let capital = document.querySelector('#capital')
+    let rate = document.querySelector('#rate')
+    let time = document.querySelector('#time')
+    let result = document.querySelector('span');
+
+    function interestCalculator() {
+        return result.innerHTML = parseInt(capital.value) * (1 + parseInt(rate.value)) ** parseInt(time.value)
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

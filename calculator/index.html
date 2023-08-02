@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<h1>My Calculator</h1>
+
+First number<br/>
+
+<input id="n1" type="number"/> <br/>
+
+Second number<br/>
+
+<input id="n2" type="number" /> <br/> <br/>
+
+<button onclick="add()">add</button>
+<button onclick="subtract()">subtraction</button>
+<button onclick="multiplication()">multiplication</button>
+<button onclick="division()">division</button>
+<br/> <br/>
+
+O result é <span></span>
+
+<script>
+    let n1=document.querySelector('#n1')
+    let n2=document.querySelector('#n2')
+    let result = document.querySelector('span')
+
+    function add(){
+        result.innerHTML = parseInt(n1.value) + parseInt(n2.value)
+    }
+    function subtract(){
+        result.innerHTML = parseInt(n1.value) - parseInt(n2.value)
+    }
+    function division(){
+        result.innerHTML = parseInt(n1.value) / parseInt(n2.value)
+    }
+    function multiplication(){
+        result.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+    }
+</script>
+<body>
+    
+</body>
+</html>

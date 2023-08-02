@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check palindrome</title>
+</head>
+
+<h1>Check palindrome</h1>
+
+<input id="letter" type="text" /><br />
+
+<button onclick="isPalindrome()">Palindrome</button>
+<br /> <br />
+
+É palindrome? <span></span>
+
+<script>
+    let letter = document.querySelector('#letter')
+    let result = document.querySelector('span')
+
+    function isPalindrome() {
+        const palindrome = letter.value.split('').reverse().join('');
+        return result.innerHTML = palindrome === letter.value ? 'Is palindrome' : 'Not palindrome'
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

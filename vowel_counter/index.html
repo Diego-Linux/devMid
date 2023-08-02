@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel counter</title>
+</head>
+
+<h1>Vowel counter</h1>
+
+<input id="letter" type="text" /><br />
+
+<button onclick="vowelCounter()">Counter</button>
+<br /> <br />
+
+Counter: <span></span>
+
+<script>
+    let letter = document.querySelector('#letter')
+    let result = document.querySelector('span')
+
+    function vowelCounter() {
+        result.innerHTML = letter.value.match(/[aeiou]/g).length
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

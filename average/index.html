@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+
+<h1>My Calculator</h1>
+
+First note<br />
+
+<input id="n1" type="number" /> <br />
+
+Second note<br />
+
+<input id="n2" type="number" /> <br /> <br />
+
+Third note<br />
+
+<input id="n3" type="number" /> <br /> <br />
+
+<button onclick="calculateAverage()">Average</button>
+<br /> <br />
+
+O result é <span></span>
+
+<script>
+    let n1 = document.querySelector('#n1')
+    let n2 = document.querySelector('#n2')
+    let n3 = document.querySelector('#n3')
+    let result = document.querySelector('span')
+
+    function calculateAverage() {
+        result.innerHTML = (parseInt(n1.value) + parseInt(n2.value) + parseInt(n3.value)) / 3
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>
